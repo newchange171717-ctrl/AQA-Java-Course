@@ -1,3 +1,5 @@
+package Main;
+
 public class Task4 {
     public static void main(String [] args){
         int a = 71;

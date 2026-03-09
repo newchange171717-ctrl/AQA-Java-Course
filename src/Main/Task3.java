@@ -1,3 +1,5 @@
+package Main;
+
 public class Task3 {
     public static void main(String [] args){
         int value = 176;

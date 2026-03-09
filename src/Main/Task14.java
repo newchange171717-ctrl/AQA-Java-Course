@@ -1,3 +1,5 @@
+package Main;
+
 public class Task14 {
     public static int[] createArray(int len, int initialValue) {
         if (len < 0) throw new IllegalArgumentException("len must be non-negative");

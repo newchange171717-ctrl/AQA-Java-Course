@@ -1,3 +1,5 @@
+package Main;
+
 public class Task13 {
     public static void main(String[] args) {
         int n = 6;
