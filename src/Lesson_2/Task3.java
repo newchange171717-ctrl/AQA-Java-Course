@@ -1,3 +1,5 @@
+package Lesson_2;
+
 public class Task3 {
     public static void main(String [] args){
         int value = 176;

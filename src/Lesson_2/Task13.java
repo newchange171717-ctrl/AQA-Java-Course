@@ -1,3 +1,5 @@
+package Lesson_2;
+
 public class Task13 {
     public static void main(String[] args) {
         int n = 6;
