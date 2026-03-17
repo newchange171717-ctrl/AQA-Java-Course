@@ -2,6 +2,7 @@ package Lesson_4.Animals;
 
 public class Dog extends Animal {
     public static int totalDogs = 0;
+
     public Dog(String name) {
         super(name);
         totalDogs++;
