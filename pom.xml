@@ -12,6 +12,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
 
     <groupId>org.example</groupId>
     <artifactId>Lss7</artifactId>
