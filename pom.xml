@@ -19,11 +19,10 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>5.5.0</version>  <!-- актуальная на 2026 год -->
+            <version>5.5.0</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- TestNG (или JUnit 5, если предпочитаете) -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -31,7 +30,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JSON Assert (для удобного сравнения всего тела) -->
         <dependency>
             <groupId>org.skyscreamer</groupId>
             <artifactId>jsonassert</artifactId>

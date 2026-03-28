@@ -14,8 +14,6 @@ public class PostmanEchoRequestMethodsTest {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = BASE_URL;
-
-        // Отключаем автоматическое добавление charset (решает проблему 500)
         RestAssured.config = RestAssured.config()
                 .encoderConfig(EncoderConfig.encoderConfig()
                         .appendDefaultContentCharsetToContentTypeIfUndefined(false));
@@ -39,11 +37,11 @@ public class PostmanEchoRequestMethodsTest {
                 .body("url", containsString("foo2=bar2"));
     }
 
-    // ====================== POST Form Data (исправлено) ======================
+    // ====================== POST Form Data  ======================
     @Test
     public void testPostFormData() {
         given()
-                .log().all()                    // оставляем полный лог для отладки
+                .log().all()
                 .formParam("foo1", "bar1")
                 .formParam("foo2", "bar2")
                 .when()
