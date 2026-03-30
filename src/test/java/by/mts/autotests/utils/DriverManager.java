@@ -13,6 +13,7 @@ public class DriverManager {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
+            // options.addArguments("--headless"); // раскомментировать при необходимости
             driver = new ChromeDriver(options);
         }
         return driver;
