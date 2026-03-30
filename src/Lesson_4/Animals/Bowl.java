@@ -1,7 +1,7 @@
 package Lesson_4.Animals;
 
-public class Bowl { private int food;
-
+public class Bowl {
+    private int food;
     public Bowl(int food) {
         if (food < 0) food = 0;
         this.food = food;
