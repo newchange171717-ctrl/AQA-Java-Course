@@ -4,7 +4,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.time.Duration;
 import java.util.List;
 
@@ -17,12 +16,9 @@ public class MainPage {
     private final By replenishmentBlock = By.xpath("//*[contains(text(),'Онлайн пополнение') or contains(text(),'Пополнение без комиссии')]");
     private final By detailsLink = By.xpath("//a[contains(text(),'Подробнее о сервисе')]");
     private final By tabServices = By.xpath("//*[contains(text(),'Услуги связи') or contains(@for,'connection-phone')]");
-
     private final By phoneField = By.xpath("//input[contains(@id,'phone') or contains(@class,'phone') or @type='tel']");
     private final By amountField = By.xpath("//input[contains(@id,'amount') or contains(@placeholder,'Сумма') or contains(@class,'amount')]");
-
     private final By continueButton = By.xpath("//button[contains(text(),'Продолжить') or contains(text(),'Оплатить') or contains(@class,'continue') or @type='submit']");
-
     private final By cookieAccept = By.xpath("//button[contains(text(),'Принять') or contains(text(),'Согласен')]");
 
     public MainPage(WebDriver driver) {
@@ -177,7 +173,7 @@ public class MainPage {
             }
 
             if (!clicked) {
-                System.out.println("⚠️ Видимая кнопка не найдена");
+                System.out.println("Видимая кнопка не найдена");
             }
 
             Thread.sleep(5000);
@@ -210,7 +206,7 @@ public class MainPage {
         System.out.println("Телефон найден: " + phoneFound);
 
         if (isSearchPage) {
-            System.out.println("⚠️ Сайт перенаправил на поиск вместо формы оплаты — это нормальное поведение на текущей версии сайта.");
+            System.out.println("Сайт перенаправил на поиск вместо формы оплаты — это нормальное поведение на текущей версии сайта.");
             Assert.assertTrue(true); // тест проходит
         } else {
             Assert.assertTrue(amountFound || phoneFound || hasPaymentSigns,

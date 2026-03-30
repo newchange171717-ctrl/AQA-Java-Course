@@ -35,7 +35,6 @@ public class OnlineReplenishmentTest {
     public void testDetailsLink() {
         mainPage.open();
         mainPage.clickDetailsLink();
-        // Можно добавить проверку URL или заголовка новой страницы, если нужно
     }
 
     @Test
